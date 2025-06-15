@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="stylesheet" href="./index.css">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+</head>
+
+<body>
+  <h1>book catalog</h1>
+  <!--table will be better for this case becouse cards do not looks like cards-->
+  <ul>
+  </ul>
+
+  <h1>book form</h1>
+  <form class="card" novalidate>
+    <label>book title </label>
+    <input type="text" autocomplete="false" name="title" placeholder="title" minlength="8" maxlength="60"
+      aria-describedby="title" required>
+    <span aria-labelledby="title"></span>
+
+    <label>pages amount </label>
+    <input type="number" autocomplete="false" name="pages" min="0" max="2000" aria-describedby="pages" required>
+    <span aria-labelledby="pages"></span>
+
+    <label>book author </label>
+    <input type="text" autocomplete="false" name="author" placeholder="author" minlength="6" maxlength="20"
+      aria-describedby="author" required>
+    <span aria-labelledby="author"></span>
+
+    <button class="btn" type="submit">submit</button>
+  </form>
+
+  <script src="./index.js"></script>
+</body>
+
+</html>
